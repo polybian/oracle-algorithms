@@ -6,7 +6,6 @@ built from scratch with Qiskit: **Bernstein-Vazirani** (hidden string
 in one query) and **Simon** (hidden period with O(n) queries).
 
 Continuing the oracle-algorithm thread from `quantum-circuits-implementation` (Deutsch-Jozsa).
-I love molecular engineering, and above all QUANTUM.
 
 ## The three implementations
 
