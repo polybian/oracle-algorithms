@@ -21,8 +21,7 @@ oracle-algorithms/
 │   ├── 02_simon.py               # hidden period via Simon + GF(2) solve
 │   └── 03_query_advantage.py     # textbook query-complexity table
 ├── docs/
-│   ├── architecture.md        # this file
-│   └── interview-answers.md
+│   └── architecture.md        # this file
 └── simplified-explanation.md  # plain-language guide (Spanish)
 ```
 
