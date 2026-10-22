@@ -5,8 +5,7 @@ algorithms that proved quantum computers can beat classical ones —
 built from scratch with Qiskit: **Bernstein-Vazirani** (hidden string
 in one query) and **Simon** (hidden period with O(n) queries).
 
-This is the fifth implementation in my quantum series (#19 in my portfolio), continuing the
-oracle-algorithm thread from `quantum-circuits-implementation` (Deutsch-Jozsa).
+Continuing the oracle-algorithm thread from `quantum-circuits-implementation` (Deutsch-Jozsa).
 I love molecular engineering, and above all QUANTUM.
 
 ## The three implementations
