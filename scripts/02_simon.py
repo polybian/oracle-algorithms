@@ -1,5 +1,5 @@
 """
-02 — Simon's algorithm: find a hidden period with O(n) queries.
+02 - Simon's algorithm: find a hidden period with O(n) queries.
 
 Problem: an oracle hides a nonzero n-bit period s. The function f is
 guaranteed 2-to-1 with f(x) = f(x XOR s) for all x. Classically,
@@ -99,7 +99,7 @@ def main() -> None:
     assert recovered == hidden, (
         f"Wrong period: recovered '{recovered_s}', hidden '{HIDDEN_S}'"
     )
-    print("OK — Simon's circuit found the hidden period; classical "
+    print("OK - Simon's circuit found the hidden period; classical "
           "elimination confirmed it.")
 
 

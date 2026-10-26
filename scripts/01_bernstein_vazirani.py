@@ -1,5 +1,5 @@
 """
-01 — Bernstein-Vazirani: recover a hidden bitstring in ONE query.
+01 - Bernstein-Vazirani: recover a hidden bitstring in ONE query.
 
 Problem: an oracle hides an n-bit string s. The oracle computes
 f(x) = s·x (mod 2), the dot product of s with the input x.
@@ -64,7 +64,7 @@ def main() -> None:
         print(f"{s:>10}  {recovered:>10}  {'YES' if match else 'NO'}")
         assert match, f"Failed to recover hidden string {s}: got {recovered}"
 
-    print(f"\nOK — all {len(HIDDEN_STRINGS)} hidden strings recovered "
+    print(f"\nOK - all {len(HIDDEN_STRINGS)} hidden strings recovered "
           f"in a single oracle query each.")
 
 

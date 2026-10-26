@@ -29,7 +29,7 @@ del código.
 
 - **Detective clásico:** necesita 3 preguntas, una por cada bit del
   código. Con un código de 50 bits, 50 preguntas.
-- **Detective cuántico:** hace **UNA** pregunta — pero la hace "en
+- **Detective cuántico:** hace **UNA** pregunta, pero la hace "en
   superposición", preguntando todos los códigos posibles a la vez.
   Gracias a un truco llamado *phase kickback* (la respuesta se
   escribe como un patrón de fases en vez de como bits), al final la
@@ -63,7 +63,7 @@ parejas separadas por el período.
   preguntas contra 33 millones.
 
 Este es el salto **exponencial**, y es el antepasado directo del
-algoritmo de Shor — el que en teoría podría romper el RSA. Simon es
+algoritmo de Shor: el que en teoría podría romper el RSA. Simon es
 el prototipo; Shor es la aplicación que asustó al mundo de la
 seguridad.
 

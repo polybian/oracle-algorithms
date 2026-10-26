@@ -2,8 +2,8 @@
 
 ## What this project is
 
-Implementations of the **Deutsch-Jozsa algorithm family** — the oracle
-algorithms that proved quantum computers can beat classical ones —
+Implementations of the **Deutsch-Jozsa algorithm family** (the oracle
+algorithms that proved quantum computers can beat classical ones)
 built from scratch with Qiskit: **Bernstein-Vazirani** (1993) and
 **Simon** (1994). This is the third implementation in my quantum
 series, continuing where `quantum-circuits-implementation` (Deutsch-Jozsa) and
@@ -25,7 +25,7 @@ oracle-algorithms/
 └── simplified-explanation.md  # plain-language guide (Spanish)
 ```
 
-## 01 — Bernstein-Vazirani: how one query learns n bits
+## 01. Bernstein-Vazirani: how one query learns n bits
 
 The oracle hides s and computes f(x) = s·x mod 2. The circuit:
 
@@ -37,11 +37,11 @@ The oracle hides s and computes f(x) = s·x mod 2. The circuit:
 With the ancilla in |->, the oracle's action becomes a *phase*:
 |x>|-> -> (-1)^(s·x) |x>|->. The input register now holds a phase
 pattern encoding s, and the final Hadamards convert phase into
-computational-basis information — the measurement reads out s
+computational-basis information: the measurement reads out s
 directly. One query, n bits, deterministic on an ideal machine.
 Classically each query reveals at most one bit of s, hence n queries.
 
-## 02 — Simon: the oracle derivation
+## 02. Simon: the oracle derivation
 
 Hidden period s = '101' (n = 3), oracle f(x) = min(x, x XOR s) as
 3-bit integers. This is 2-to-1 with exactly the right period:
@@ -76,20 +76,20 @@ search (exact for n = 3), asserting the recovered period.
 ## Design choices
 
 - **Hand-derived oracles, verified by truth table**: no black-box
-  synthesis — every gate is justified above, so the implementation
+  synthesis. Every gate is justified above, so the implementation
   is inspectable and the derivation is checkable.
 - **Seeded simulator**: both scripts reproduce their results
   bit-for-bit; the README's numbers are regenerated, not remembered.
 - **Classical post-processing kept explicit**: Simon's quantum part
   ends at the measurement; the GF(2) solve is plainly classical
-  code, which is the honest way to present the algorithm.
+  code, which is the clearest way to present the algorithm.
 - **Assertions as the verdict**: BV asserts all three hidden strings
   recovered; Simon asserts the recovered period equals the hidden
   one. The algorithmic claims are passing checks, not commentary.
 
 ## What this is not
 
-Not a complexity proof and not new research — these are textbook
+Not a complexity proof and not new research: these are textbook
 algorithms implemented cleanly. The value is operational: real
 circuits, real measured outcomes, and the query advantage made
 concrete instead of notional.

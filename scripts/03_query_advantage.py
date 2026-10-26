@@ -1,9 +1,9 @@
 """
-03 — Query advantage: the Deutsch-Jozsa family at a glance.
+03 - Query advantage: the Deutsch-Jozsa family at a glance.
 
 Prints the query-complexity comparison for the three oracle
 algorithms in this series. These are textbook results (not measured
-here — the implementations that demonstrate them live in scripts
+here - the implementations that demonstrate them live in scripts
 01 and 02 of this project, and in 04_deutsch_jozsa.py of
 quantum-circuits-implementation):
 
@@ -22,7 +22,7 @@ Run:
 
 
 def main() -> None:
-    print("Query complexity — textbook results for the oracle family:\n")
+    print("Query complexity - textbook results for the oracle family:\n")
     print(f"  {'Algorithm':<20} {'Quantum queries':<16} {'Classical queries'}")
     print("  " + "-" * 58)
     print(f"  {'Deutsch-Jozsa':<20} {'1':<16} {'up to 2^(n-1) + 1'}")
@@ -34,7 +34,7 @@ def main() -> None:
     print("  n = 50:  DJ needs 1 vs up to 2^49; BV needs 1 vs 50;")
     print("           Simon needs ~50 vs ~2^25 (33 million).")
     print()
-    print("OK — table printed. (Textbook facts; see scripts 01/02 for the")
+    print("OK - table printed. (Textbook facts; see scripts 01/02 for the")
     print("implementations that realize the quantum column.)")
 
 
